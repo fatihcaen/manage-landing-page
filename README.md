@@ -12,6 +12,6 @@ You can access the website from <a href="https://huddle-landing-page.fatihcaen.n
 - <a href="https://tailwindcss.com">Tailwind CSS</a>
 - CSS Flexbox
 - Javascript
-- <a href="https://sweetaler2.github.io">sweetalert</a>
+- <a href="https://sweetalert2.github.io">sweetalert</a>
 - VS Code
 - <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier</a> (VS Code extension. Formats the code so you read it easily.)
