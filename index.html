@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Manage landing page</title>
+</head>
+
+<body class="overflow-x-hidden">
+  <div class="container m-auto">
+    <header>
+      <nav class="navbar w-full flex justify-between items-center p-8 bg-transparent">
+        <img src="assets/logo.svg" alt="logo" class="w-32 sm:w-40">
+        <div class="nav-links-d flex flex-row items-center hidden lg:flex">
+          <h6 class="h text-sm font-bold mr-8 cursor-pointer transition-colors duration-300">Pricing</h6>
+          <h6 class="h text-sm font-bold mr-8 cursor-pointer transition-colors duration-300">Product</h6>
+          <h6 class="h text-sm font-bold mr-8 cursor-pointer transition-colors duration-300">About Us</h6>
+          <h6 class="h text-sm font-bold mr-8 cursor-pointer transition-colors duration-300">Careers</h6>
+          <h6 class="h text-sm font-bold cursor-pointer transition-colors duration-300">Community</h6>
+        </div>
+        <div class="hidden lg:flex">
+          <button class="get-started rounded-full font-medium text-white text-xs py-3 px-8 mt-4">
+            Get Started
+          </button>
+        </div>
+        <div class="toggler cursor-pointer sm:w-8 lg:hidden">
+          <img src="assets/icon-hamburger.svg" alt="">
+        </div>
+        <div class="nav-links-m absolute w-full mt-48 bg-white flex flex-col items-center py-12 rounded-md 
+          sm:mt-56">
+          <h6 class="h text-base font-extrabold mb-6 sm:text-xl  md:text-2xl">Pricing</h6>
+          <h6 class="h text-base font-extrabold mb-6 sm:text-xl  md:text-2xl">Product</h6>
+          <h6 class="h text-base font-extrabold mb-6 sm:text-xl  md:text-2xl">About Us</h6>
+          <h6 class="h text-base font-extrabold mb-6 sm:text-xl  md:text-2xl">Careers</h6>
+          <h6 class="h text-base font-extrabold sm:text-xl  md:text-2xl">Community</h6>
+        </div>
+      </nav>
+    </header>
+    <div class="intro flex flex-col items-center lg:flex-row lg:mt-12 lg:justify-around xl:mt-16">
+      <div class="illustration order-1 lg:order-2 lg:w-2/5">
+        <img src="assets/illustration-intro.svg" alt="" class="w-full h-auto">
+      </div>
+      <div class="flex flex-col items-center order-2 lg:order-1 lg:w-1/2 lg:items-start">
+        <h1 class="h text-4xl text-center font-bold leading-tight 
+          sm:mx-4 
+          lg:text-left lg:ml-0
+          lg:text-5xl
+          xl:text-6xl">
+          Bring everyone together to build better products.
+        </h1>
+        <p class="p text-center mx-4 my-2 leading-relaxed 
+          sm:mx-8 md:mx-12 sm:text-xl 
+          md:text-2xl md:text-2xl
+          lg:text-left lg:ml-0 lg:mt-8 lg:text-lg
+          xl:text-lg xl:mt-10 xl:w-3/5">
+          Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.
+        </p>
+        <button class="get-started rounded-full font-medium text-white text-xs py-3 px-8 mt-4
+ 
+          sm:mt-8 sm:px-10 sm:text-xl 
+          md:mt-12 md:px-12 md:text-2xl
+          lg:text-xs lg:px-8 lg:mt-8
+          xl:text-xs xl:px-8 xl:mt-10">
+          Get Started
+        </button>
+      </div>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:mt-32">
+      <div class="flex flex-col lg:w-1/2">
+        <h1 class="h text-3xl text-center font-extrabold leading-relaxed mt-20 px-4
+          sm:mt-24
+          lg:text-left lg:text-4xl lg:leading-tight lg:mt-0
+          xl:text-5xl">
+          What's different about Manage?
+        </h1>
+        <p class="p text-center mx-6 my-4 text-sm leading-loose 
+          sm:text-xl sm:my-6
+          md:text-2xl md:my-8
+          lg:text-left lg:text-base lg:w-3/5
+          xl:text-base xl:w-1/2">
+          Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.
+        </p>
+      </div>
+      <div class="flex flex-col lg:w-1/2">
+        <div class="h-num flex flex-row justify-start items-center rounded-l-full ml-4 mt-10 
+          sm:mt-16 
+          md:mt-20
+          lg:mt-4">
+          <div class="num text-white font-bold py-2 px-6 rounded-full 
+            sm:text-xl sm:py-3 sm:px-8 
+            md:text-2xl md:px-12
+            lg:text-lg lg:py-2 lg:px-8">
+            01
+          </div>
+          <h6 class="h font-extrabold ml-4 
+            sm:text-xl sm:ml-6 
+            md:text-2xl md:ml-8
+            lg:text-lg">
+            Track company-wide progress
+          </h6>
+        </div>
+        <p class="p text-left mx-3 my-4 text-sm leading-loose
+          sm:text-xl sm:mx-6 sm:my-6 
+          md:text-2xl md:mx-8 md:my-8
+          lg:text-lg lg:ml-32 lg:mt-2
+          xl:text-base xl:ml-32 xl:mt-2 xl:leading-relaxed">
+          See how your day-to-day tasks fit into the wider vision. Go from
+          tracking progress at the milestone level all the way done to the
+          smallest of details. Never lose sight of the bigger picture again.
+        </p>
+        <div class="h-num flex flex-row justify-start items-center rounded-l-full ml-4 mt-10 
+          sm:mt-16 
+          md:mt-20
+          xl:mt-4">
+          <div class="num text-white font-bold py-2 px-6 rounded-full 
+            sm:text-xl sm:py-3 sm:px-8 
+            md:text-2xl md:px-12
+            lg:text-lg lg:py-2 lg:px-8">
+            02
+          </div>
+          <h6 class="h font-extrabold ml-4 
+            sm:text-xl sm:ml-6 
+            md:text-2xl md:ml-8
+            lg:text-lg">
+            Advanced built-in reports
+          </h6>
+        </div>
+        <p class="p text-left mx-3 my-4 text-sm leading-loose
+          sm:text-xl sm:mx-6 sm:my-6 
+          md:text-2xl md:mx-8 md:my-8
+          lg:text-lg lg:ml-32 lg:mt-2
+          xl:text-base xl:ml-32 xl:mt-2 xl:leading-relaxed">
+          Set internal delivery estimates and track progress toward company
+          goals. Our customisable dashboard helps you build out the reports
+          you need to keep key stakeholders informed.
+        </p>
+        <div class="h-num flex flex-row justify-start items-center rounded-l-full ml-4 mt-10 
+          sm:mt-16 
+          md:mt-20
+          xl:mt-4">
+          <div class="num text-white font-bold py-2 px-6 rounded-full 
+            sm:text-xl sm:py-3 sm:px-8 
+            md:text-2xl md:px-12
+            lg:text-lg lg:py-2 lg:px-8">
+            03
+          </div>
+          <h6 class="h font-extrabold ml-4 
+            sm:text-xl sm:ml-6 
+            md:text-2xl md:ml-8
+            lg:text-lg">
+            Everything you need in one place
+          </h6>
+        </div>
+        <p class="p text-left mx-3 my-4 text-sm leading-loose
+          sm:text-xl sm:mx-6 sm:my-6 
+          md:text-2xl md:mx-8 md:my-8
+          lg:text-lg lg:ml-32 lg:mt-2
+          xl:text-base xl:ml-32 xl:mt-2 xl:leading-relaxed">
+          Stop jumping from one service to another to communicate, store files,
+          track tasks and share documents. Manage offers an all-in-one team
+          productivity solution.
+        </p>
+      </div>
+    </div>
+  </div>
+  <h1 class="h text-center text-3xl font-extrabold mt-16
+      sm:mt-20 md:mt-24
+      lg:text-4xl">
+    What they've said
+  </h1>
+  <div class="swiper-container mt-16">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex flex-col items-center">
+        <div class="photo w-16 sm:w-24 md:w-32 lg:w-20">
+          <img src="assets/avatar-anisha.png" alt="" class="w-full h-auto">
+        </div>
+        <h6 class="h font-bold mt-6 sm:text-xl md:text-2xl lg:text-lg">Anisha Li</h6>
+        <p class="p text-center mx-8 my-4 text-sm leading-loose 
+            sm:text-xl 
+            md:text-2xl 
+            lg:text-base lg:leading-relaxed">
+          “Manage has supercharged our team’s workflow. The ability to maintain
+          visibility on larger milestones at all times keeps everyone motivated.”
+        </p>
+      </div>
+      <div class="swiper-slide flex flex-col items-center ">
+        <div class="photo w-16 sm:w-24 md:w-32 lg:w-20">
+          <img src="assets/avatar-ali.png" alt="" class="w-full h-auto">
+        </div>
+        <h6 class="h font-bold mt-6 sm:text-xl md:text-2xl lg:text-lg">Ali Bravo</h6>
+        <p class="p text-center mx-8 my-4 text-sm leading-loose 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base lg:leading-relaxed">
+          “We have been able to cancel so many other subscriptions since using
+          Manage. There is no more cross-channel confusion and everyone is much
+          more focused.”
+
+        </p>
+      </div>
+      <div class="swiper-slide flex flex-col items-center">
+        <div class="photo w-16 sm:w-24 md:w-32 lg:w-20">
+          <img src="assets/avatar-richard.png" alt="" class="w-full h-auto">
+        </div>
+        <h6 class="h font-bold mt-6 sm:text-xl md:text-2xl lg:text-lg">Richard Watts</h6>
+        <p class="p text-center mx-8 my-4 text-sm leading-loose 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base lg:leading-relaxed">
+          “Manage allows us to provide structure and process. It keeps us organized
+          and focused. I can’t stop recommending them to everyone I talk to!”
+        </p>
+      </div>
+      <div class="swiper-slide flex flex-col items-center">
+        <div class="photo w-16 sm:w-24 md:w-32 lg:w-20">
+          <img src="assets/avatar-shanai.png" alt="" class="w-full h-auto">
+        </div>
+        <h6 class="h font-bold mt-6 sm:text-xl md:text-2xl lg:text-lg">Shanai Gough</h6>
+        <p class="p text-center mx-8 my-4 text-sm leading-loose 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base lg:leading-relaxed">
+          “Their software allows us to track, manage and collaborate on our projects
+          from anywhere. It keeps the whole team in-sync without being intrusive.”
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-center mt-10">
+    <div class="swiper-pagination lg:hidden"></div>
+    <button class="get-started rounded-full font-medium text-white text-xs py-3 px-8 mt-16 
+      sm:px-10 sm:text-xl 
+      md:px-12 md:text-2xl
+      lg:text-xs lg:px-8 lg:mt-8
+      xl:text-xs xl:px-8 xl:mt-10">
+      Get Started
+    </button>
+  </div>
+  <div class="simplify flex flex-col justify-center items-center mt-10 py-20 px-8
+      sm:mt-16 sm:py-24 sm:px-12
+      md:mt-20 md:px-16
+      lg:flex-row lg:justify-around lg:mt-32 lg:py-16">
+    <h1 class="text-4xl font-bold text-white text-center
+    lg:text-5xl lg:w-1/2 lg:leading-none lg:text-left lg:font-bold">
+      Simplify how your team works today
+    </h1>
+    <button class="get-started white rounded-full font-bold text-xs py-3 px-8 mt-6
+      sm:px-10 sm:text-xl sm:mt-10 
+      md:px-12 md:mt-12 md:text-2xl
+      lg:text-xs lg:px-8 lg:mt-8
+      xl:text-xs xl:px-8 xl:mt-0">
+      Get Started
+    </button>
+  </div>
+  <footer class="flex flex-col items-center py-10 
+  sm:py-16 
+  md:py-20 
+  lg:py-0 lg:pb-16 lg:pr-0 lg:pr-32">
+    <div class="flex flex-col 
+    lg:flex-row lg:justify-around mb-10">
+      <div class="flex flex-row justify-center lg:items-center lg:order-3 lg:-mr-10 xl:-mr-40">
+        <input type="text" class="rounded-full py-3 pl-4 w-2/3 text-xs mr-2 focus:outline-none
+        lg: pr-10" placeholder="Updates in your inbox..." id="email">
+        <button class="footer-btn text-white rounded-full font-bold text-xs py-3 px-8
+          sm:px-10 sm:text-xl md:text-2xl 
+          md:px-16 md:text-2xl
+          lg:text-xs lg:py-3 lg:px-8">
+          GO
+        </button>
+      </div>
+      <div class="flex flex-row justify-around mt-12 sm:mt-16 md:mt-20 lg:order-2">
+        <div class="flex flex-col lg:mr-20 xl:mr-56">
+          <h6 class="footer-link text-white text-sm mb-4
+          transition-colors duration-300 cursor-pointer 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base">Home</h6>
+          <h6 class="footer-link text-white text-sm mb-4
+          transition-colors duration-300 cursor-pointer 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base">Pricing</h6>
+          <h6 class="footer-link text-white text-sm mb-4
+          transition-colors duration-300 cursor-pointer 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base">Products</h6>
+          <h6 class="footer-link text-white text-sm 
+            sm:text-xl 
+            md:text-2xl
+            lg:text-base">About Us</h6>
+        </div>
+        <div class="flex flex-col lg:mr-20 xl:mr-40">
+          <h6 class="footer-link text-white text-sm mb-4
+          transition-colors duration-300 cursor-pointer 
+            sm:text-xl 
+            md:text-2xl 
+            lg:text-base">Careers</h6>
+          <h6 class="footer-link text-white text-sm mb-4
+          transition-colors duration-300 cursor-pointer 
+            sm:text-xl 
+            md:text-2xl 
+            lg:text-base">Community</h6>
+          <h6 class="footer-link text-white text-sm mb-4
+          transition-colors duration-300 cursor-pointer 
+            sm:text-xl 
+            md:text-2xl 
+            lg:text-base">Privacy Policy</h6>
+        </div>
+      </div>
+      <div class="flex flex-col lg:order-1">
+        <div class="flex flex-row justify-between mt-12 px-10 
+          sm:mt-16 sm:px-20 
+          md:mt-20 md:px-24 
+          lg:order-2">
+          <img class="w-8 lg:w-6 lg:mr-4" src="assets/icon-facebook.svg" alt="">
+          <img class="w-8 lg:w-6 lg:mr-4" src="assets/icon-youtube.svg" alt="">
+          <img class="w-8 lg:w-6 lg:mr-4" src="assets/icon-twitter.svg" alt="">
+          <img class="w-8 lg:w-6 lg:mr-4" src="assets/icon-pinterest.svg" alt="">
+          <img class="w-8 lg:w-6" src="assets/icon-instagram.svg" alt="">
+        </div>
+        <img class="self-center mt-12 sm:mt-16 md:mt-20 lg:order-1" src="assets/logo-w.svg" alt="">
+      </div>
+      <p class="copyright text-xs self-center mt-12 sm:mt-16 md:mt-20 
+        sm:text-xl 
+        md:text-2xl 
+        lg:order-3 lg:text-sm lg:mt-40 lg:-ml-32">Copyright 2020.
+        All Rights
+        Reserved
+      </p>
+    </div>
+    <div class="flex flex-col items-center w-full lg:flex-row lg:justify-around ">
+      <h6 class="text-white text-base sm:text-lg md:text-xl">Challenge by
+        <a class="text-orange-500 font-bold"
+          href="https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5" target="_blank">Frontend Mentor
+        </a></h6>
+      <h6 class="text-white text-base sm:text-lg md:text-xl">
+        Coded by <a class="text-orange-500 font-bold" href="https://www.frontendmentor.io/profile/fatihcaen"
+          target="_blank">Fatih
+          Can
+        </a>
+      </h6>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/navbar-toggle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="js/mail-validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@import "https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700;800&display=swap";
+body {
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.nav-links-m {
+  -webkit-box-shadow: 0px 200px 140px 115px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 200px 140px 115px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 200px 140px 115px rgba(0, 0, 0, 0.3);
+  width: 85%;
+}
+
+.nav-links-d h6:hover {
+  color: #9095a7;
+}
+
+.bg-pattern {
+  width: 135%;
+  top: -6rem;
+  right: -11rem;
+  z-index: -1;
+}
+
+.h {
+  color: #242d52;
+}
+
+.p {
+  color: #9095a7;
+}
+
+.get-started {
+  background-color: #f25f3a;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(242, 95, 58, 0.5);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(242, 95, 58, 0.5);
+  box-shadow: 0px 10px 20px 0px rgba(242, 95, 58, 0.5);
+}
+.get-started:hover {
+  filter: brightness(1.25);
+}
+
+.get-started.white {
+  background-color: #fff;
+  color: #f25f3a;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(242, 95, 58, 0.5);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(242, 95, 58, 0.5);
+  box-shadow: 0px 10px 20px 0px rgba(242, 95, 58, 0.5);
+}
+
+.num {
+  background-color: #f25f3a;
+}
+
+.h-num {
+  background-color: #ffefeb;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(242, 95, 58, 0.5);
+  margin-right: 0.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f25f3a;
+}
+
+.simplify {
+  background: url(../assets/bg-simplify-section-mobile.svg) no-repeat left center;
+  background-color: #f25f3a;
+}
+
+footer {
+  background-color: #1d1e25;
+}
+footer .footer-btn {
+  background-color: #f25f3a;
+}
+footer .footer-btn:hover {
+  filter: brightness(1.25);
+}
+footer .footer-link {
+  color: #fafafa;
+}
+footer .footer-link:hover {
+  color: #f25f3a;
+}
+footer .copyright {
+  color: #9095a7;
+}
+footer .warning {
+  color: #f25f3a;
+}
+footer .success {
+  color: green;
+}
+
+@media (min-width: 640px) {
+  .bg-pattern {
+    width: 100%;
+    top: -6rem;
+    right: -9rem;
+  }
+
+  .nav-links-m {
+    width: 90%;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .bg-pattern {
+    width: 100%;
+    top: -12rem;
+    right: -9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .bg-pattern {
+    width: 53%;
+    top: 10rem;
+    right: -2rem;
+  }
+
+  .h-num {
+    background: transparent;
+  }
+
+  input::placeholder {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1280px) {
+  .bg-pattern {
+    width: 54%;
+    top: 8rem;
+    right: -10rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
