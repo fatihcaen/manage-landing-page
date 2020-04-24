@@ -4,7 +4,7 @@ This is the Manage Landing Page Code Challenge by frontendmenter.io. Coded by me
 
 You can access the challenge from <a href="https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5" target="_blank">this link</a>
 
-You can access the website from <a href="https://huddle-landing-page.fatihcaen.now.sh/" target="_blank">this link</a>
+You can access the website from <a href="https://fatihcaen-manage-landing-page.netlify.app/" target="_blank">this link</a>
 
 # Used technologies
 
